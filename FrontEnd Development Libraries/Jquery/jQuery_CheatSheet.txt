@@ -1,0 +1,20 @@
+<script>
+$(document).ready(function() {
+    $("button").addClass("animated bounce");   //adds class to an element
+    $(".well").addClass("animated shake");     //adds class to an existing class
+    $("#target3").addClass("animated fadeOut");  //adds class to an existing id
+    $("button").removeClass("btn-default");     // removes class from the element
+    $("#target1").css("color", "red");        //applies css to the id
+    $("#target1").prop("disabled",true);      //changes the property of the id
+	$("#target4").html("<em>#target4</em>");  //replaces the existing html content
+	$("#target4").remove();                   //removes element
+	$("#target2").appendTo("#right-well");    // moves one div element to another div element
+	$("#target5").clone().appendTo("#left-well");   //copy from one div to another
+	$("#target1").parent().css("background-color", "red"); // styles the parent element if #target1
+	$("#right-well").children().css("color","orange"); // styles the children of #right-well
+	$(".target:nth-child(2)").addClass("animated bounce");  //targets the second element of .target class
+	$(".target:odd").addClass("animated shake");  //targets odd position elements of target class
+	$(".target:even").addClass("animated shake");  //targets even position elements of target class
+	$("body").addClass("animated hinge");  //targets body 
+	});
+</script>
